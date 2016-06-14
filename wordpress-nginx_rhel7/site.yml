@@ -5,9 +5,11 @@
   remote_user: plarsen
   sudo: yes
 
-  tasks:  
+  tasks:
   - name: Install firewalld
-    yum: name="firewalld" state=present
+    yum:
+      name: "firewalld"
+      state=present
 
   roles:
     - common
