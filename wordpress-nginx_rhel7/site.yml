@@ -6,7 +6,7 @@
   sudo: yes
   
 - name: Install firewalld
-  yum: name: "firewalld" state: present
+  yum: name="firewalld" state=present
 
   roles:
     - common
