@@ -10,6 +10,11 @@
     yum:
       name: "firewalld"
       state: present
+      
+  - name: stoart firewalld
+    service: 
+      name: firewalld 
+      state: started
 
   roles:
     - common
