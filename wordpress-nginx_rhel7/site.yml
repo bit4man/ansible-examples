@@ -4,6 +4,9 @@
   # remote_user: root
   remote_user: plarsen
   sudo: yes
+  
+- name: Install firewalld
+  yum: name: "firewalld" state: present
 
   roles:
     - common
