@@ -9,7 +9,7 @@
   - name: Install firewalld
     yum:
       name: "firewalld"
-      state=present
+      state: present
 
   roles:
     - common
